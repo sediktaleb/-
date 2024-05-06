@@ -7,8 +7,7 @@ var name = person.id;
     var blyma = Math.floor(Math.random() * (100-0))+0;
 
     if(name == "Aryam"){
-        var aryam = Math.floor(Math.random() * (100-90))+90;
-        nsba.innerHTML=aryam + "%";
+        nsba.innerHTML=" 1000 %";
     }
     else if(name == "Douaa"){
         nsba.innerHTML="I Cant Count Maybe Inf %";
