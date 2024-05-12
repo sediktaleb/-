@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../Css/Servies.css">
+   <link rel="stylesheet" href="../Css/style.css">
+
+   <script src="https://kit.fontawesome.com/63ca9ab1c6.js" crossorigin="anonymous"></script>   
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "QGQINdJsYpw-UvMD1",
+      });
+   })();
+</script>
+
+</head>
+<body dir="rtl">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+                </label>
+        <label class="logo" style="font-family: man;">Futur Team</label>
+        <ul>
+            <li><a href="../index.html" class="active">القائمة الرئيسية</a></li>
+            <li><a href="Works.html">أعمـالنا</a></li>
+            <li><a href="Contact.html">تـواصل معـنا</a></li>
+            <li><a href="#">رأيــك عنا</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    <section>
+        <h1> خـدماتنا </h1>
+        <br>
+        <p>تنـبيه : اذا اردت احد الخدمات. اضـغط عليها</p>
+            <div class="Elments" id="Html" onclick="ServiesClick(this)">
+                <h1>لـغة HTML</h1>
+            
+                <img src="../IMG/html.png" alt="Html">
+                <p>نقدم لكم خدماتنا في هذه اللغة</p>
+            </div>
+            <div class="Elments" id="Css" onclick="ServiesClick(this)">
+                <h1>لـغة CSS</h1>
+
+                <img src="../IMG/Css.png" alt="Html">
+                <p>نقدم لكم خدماتنا في هذه اللغة</p>
+
+            </div>
+            <div class="Elments" id="JS" onclick="ServiesClick(this)">
+                <h1>لـغة JavaScript</h1>
+
+                <img src="../IMG/js.png" alt="Html">
+                <p>نقدم لكم خدماتنا في هذه اللغة</p>
+
+            </div>
+            <br>
+        <button onclick="Names();">Our Names</button>
+        <p id="names">
+            - طـالب الصديق . علي ضياء . سعود عبد الجليل . وارث اياد . بوصبع شرف الدين . عرعار سيرين . نصر دعاء . عباس ملاك . عزوز اريام
+        </p>
+
+    </section>
+        <section class="S1">
+
+            <h1>خانة الطلب</h1>
+            <div class="Order">
+                <h2 style="margin-top: 20px;">الاسم : </h2> <input type="text" id="uname" placeholder="الاسم المستخدم" required>
+                <h2>البريد الالكتروني : </h2> <input type="email" id="email" placeholder="البريد الالكتروني" required>
+                <h2>نوع الطلب : </h2> <input type="text" id="order" placeholder="Html ,Css ,JS" required>
+                <br>
+                <button onclick="order()">ارسـال الـطلب</button>            
+            </div>
+        </section>
+    
+</body>
+<script src="../JS/script.js"></script>
+</html>
