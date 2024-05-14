@@ -1,0 +1,12 @@
+
+@media (max-width :858px){
+    section{
+        padding: 20px;
+    }
+    section h1{
+        padding-bottom: 25px;
+        font-size: 25px;
+    }
+
+    
+}
