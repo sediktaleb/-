@@ -24,7 +24,7 @@ input{
 }
 input:focus {
     margin: 15px 20px;
-    color: #fff;
+    color: #000;
     font-family: man;
 }
 .Order button{

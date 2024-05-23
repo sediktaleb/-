@@ -1,3 +1,6 @@
+document.getElementById("loader").style.display="none";
+
+
 var names = document.getElementById("names")
 names.style.display="none";
 var click = 1;
@@ -109,4 +112,3 @@ function sendEmail(){
                 
             }
         }, 200);
-    

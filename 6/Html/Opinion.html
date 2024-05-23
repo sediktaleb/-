@@ -75,9 +75,37 @@
 
             }
         }, 200);
+        function Opinion(){
 
+var username = document.getElementById("usname");
+var opinion = document.getElementById("opinion");
+    if(username.value && opinion.value ){
+        //alert("Name ("+username.value+"),"+"Email ("+email.value+"),"+"Order ("+order.value+").");
+        document.getElementById("loader").style.display="block";
+        sendEmailOpnion();
+    }else{
+        alert("ادخل المعلومات اولا")       
+     }
+
+}
+function sendEmailOpnion(){
+
+var parmas = {
+    name : document.getElementById("usname").value,
+    opinion : document.getElementById("opinion").value,
+
+};
+const serviceID = "service_9jj3m2r";
+const templateID = "template_pwc64ze";
+
+emailjs.send(serviceID,templateID,parmas).then(function(red){
+    alert(" تم ارسال رايك شكرا جزيرة سوف يفيدنا ان شاء الله ");
+    document.getElementById("loader").style.display="none";
+
+}
+
+)};
     </script>
-    <script src="../JS/script.js"></script>
 
 </body>
 </html>
